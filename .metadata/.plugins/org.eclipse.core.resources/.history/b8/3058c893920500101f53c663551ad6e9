@@ -1,0 +1,51 @@
+/*
+ ============================================================================
+ Name        : SopaDeLetras.c
+ Author      : Amir
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "letras.h"
+
+void minusMayus(char array[][], int n) {
+	for (int i = 0; i<10 && array[i]!='\n'; i++) { //Pasar mayúsculas a minúsculas
+		if (array[i] >= 'A' && array[i] <= 'Z') {
+			array[i] += 'a' - 'A';
+		}
+	}
+}
+
+int main(void) {
+
+	char c;
+	char palabra[10];
+	//int longitud = 0;
+	printf("Ingrese una palabra a buscar en la matriz: ");
+	for (int i = 0; i<10 && c!='\n'; i++) {
+		c = getchar();
+		if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+			palabra[i] = c;
+			//longitud++;
+		} else {
+			i--;
+		}
+	}
+
+	minusMayus(letras[10][10]);
+
+
+	//for (int i = 0; i<10 && palabra[i]!='\n'; i++) { //Pasar mayúsculas a minúsculas
+		//if (palabra[i] >= 'A' && palabra[i] <= 'Z') {
+			//palabra[i] += 'a' - 'A';
+		//}
+	//}
+
+
+	return EXIT_SUCCESS;
+}

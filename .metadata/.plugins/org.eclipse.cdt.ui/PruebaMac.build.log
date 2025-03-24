@@ -1,0 +1,15 @@
+11:49:55 **** Build of configuration Debug for project PruebaMac ****
+make all 
+Building file: ../src/PruebaMac.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMac.d" -MT"src/PruebaMac.o" -o "src/PruebaMac.o" "../src/PruebaMac.c"
+Finished building: ../src/PruebaMac.c
+ 
+Building target: PruebaMac
+Invoking: Cross GCC Linker
+gcc  -o "PruebaMac"  ./src/PruebaMac.o   
+Finished building target: PruebaMac
+ 
+
+11:49:55 Build Finished. 0 errors, 0 warnings. (took 200ms)
+

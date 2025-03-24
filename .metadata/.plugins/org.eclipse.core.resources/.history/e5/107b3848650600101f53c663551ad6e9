@@ -1,0 +1,37 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Mar 21, 2025
+ *      Author: amirdujak
+ */
+
+#include "contrasena.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+void crearContrasena(char contrasena[50]) {
+	char c;
+	int longitud = 0;
+	printf("Ingrese una contraseña: ");
+	for (int i = 0; i<50 && c!='\n'; i++) {
+		c = getchar();
+		contrasena[i] = c;
+		longitud++;
+	}
+	printf("La contraseña es %s \n", contrasena);
+
+	while (longitud < 13) { //Pongo con 13 porque me toma el Enter como un espacio
+		printf("Ingrese una contraseña con 12 o más carácteres: \n");
+		longitud = 0;
+		c = 'A';
+		for (int i = 0; i<50 && c!='\n'; i++) {
+			c = getchar();
+			contrasena[i] = c;
+			longitud++;
+		}
+	}
+}
+
+void fortaleza(char contrasena[50], char c, int longitud) {
+
+}

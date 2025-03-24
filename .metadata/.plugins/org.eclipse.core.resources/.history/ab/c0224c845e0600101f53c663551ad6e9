@@ -1,0 +1,91 @@
+/*
+ ============================================================================
+ Name        : Lab4Amir.c
+ Author      : Amir
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void contrasena() {
+	char c;
+	char Contrasena[50];
+	int longitud = 0;
+	printf("Ingrese una contraseña: ");
+	for (int i = 0; i<50 && c!='\n'; i++) {
+		c = getchar();
+		Contrasena[i] = c;
+		longitud++;
+	}
+	printf("La contraseña es %s \n", Contrasena);
+
+	while (longitud < 13) { //Pongo con 13 porque me toma el Enter como un espacio
+		printf("Ingrese una contraseña con 12 o más carácteres: \n");
+		longitud = 0;
+		c = 'A';
+		for (int i = 0; i<50 && c!='\n'; i++) {
+			c = getchar();
+			Contrasena[i] = c;
+			longitud++;
+		}
+	}
+}
+
+int main(void) {
+
+	//char c;
+	//char contrasena[50];
+	//int longitud = 0;
+	//printf("Ingrese una contraseña: ");
+	//for (int i = 0; i<50 && c!='\n'; i++) {
+		//c = getchar();
+		//contrasena[i] = c;
+		//longitud++;
+	//}
+	//printf("La contraseña es %s \n", contrasena);
+
+	//while (longitud < 13) { //Pongo con 13 porque me toma el Enter como un espacio
+		//printf("Ingrese una contraseña con 12 o más carácteres: \n");
+		//longitud = 0;
+		//c = 'A';
+		//for (int i = 0; i<50 && c!='\n'; i++) {
+			//c = getchar();
+			//contrasena[i] = c;
+			//longitud++;
+		//}
+	//}
+
+	contrasena();
+
+	int opcion = 1;
+	while (opcion != 4) {
+		printf("=== Menú Principal === \n");
+		printf("1. Ver fortaleza de la contraseña \n");
+		printf("2. Mostrar detalles de los criterios \n");
+		printf("3. Ingresar una nueva contraseña \n");
+		printf("4. Salir \n");
+		printf("Ingrese una opción: ");
+		scanf("%d \n", &opcion);
+
+		while (opcion < 1 || opcion > 4) {
+			printf("Ingrese una opción válida: ");
+			scanf("%d", &opcion);
+		}
+
+		if (opcion == 1) {
+			printf("Puto \n");
+		} else if (opcion == 2) {
+			printf("Farina putazo \n");
+		} else {
+			printf("Mateo trolo \n");
+		}
+	}
+
+	printf("La contraseña es %s \n", Contrasena);
+
+	return EXIT_SUCCESS;
+}

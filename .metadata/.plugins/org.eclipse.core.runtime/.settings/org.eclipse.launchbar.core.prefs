@@ -1,0 +1,9 @@
+LaunchTargetManager/configs/SopaDeLetras=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/WalterWalter=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=aarch64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:WalterWalter,org.eclipse.launchbar.core.descriptorType.default\:Prueba2Mac,org.eclipse.launchbar.core.descriptorType.default\:SopaDeLetras,org.eclipse.launchbar.core.descriptorType.default\:Lab4Amir
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:WalterWalter/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:WalterWalter/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

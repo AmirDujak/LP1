@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SopaDeLetras/src/SopaDeLetras.c&apos; to &apos;sopa.c&apos;" description="Rename resource &apos;SopaDeLetras.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SopaDeLetras.c" name="sopa.c" stamp="1742477010570" updateReferences="true"/>
+</session>

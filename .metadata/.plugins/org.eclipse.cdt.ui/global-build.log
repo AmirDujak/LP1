@@ -1,0 +1,15 @@
+13:03:48 **** Incremental Build of configuration Debug for project Lab4Amir ****
+make all 
+Building file: ../src/funciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/funciones.d" -MT"src/funciones.o" -o "src/funciones.o" "../src/funciones.c"
+Finished building: ../src/funciones.c
+ 
+Building target: Lab4Amir
+Invoking: MacOS X C Linker
+gcc  -o "Lab4Amir"  ./src/Lab4Amir.o ./src/funciones.o   
+Finished building target: Lab4Amir
+ 
+13:03:50 **** Incremental Build of configuration Debug for project Lab4Amir ****
+make all 
+make: Nothing to be done for `all'.
