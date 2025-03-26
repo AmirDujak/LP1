@@ -1,15 +1,23 @@
-13:03:48 **** Incremental Build of configuration Debug for project Lab4Amir ****
+16:31:39 **** Build of configuration Debug for project Pruebas ****
 make all 
-Building file: ../src/funciones.c
+Building file: ../src/Pruebas.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/funciones.d" -MT"src/funciones.o" -o "src/funciones.o" "../src/funciones.c"
-Finished building: ../src/funciones.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Pruebas.d" -MT"src/Pruebas.o" -o "src/Pruebas.o" "../src/Pruebas.c"
+../src/Pruebas.c:16:17: warning: '&&' within '||' [-Wlogical-op-parentheses]
+   16 |         m = i++ && j++ && k++ || l++;
+      |             ~~~~~~~~~~~^~~~~~ ~~
+../src/Pruebas.c:16:17: note: place parentheses around the '&&' expression to silence this warning
+   16 |         m = i++ && j++ && k++ || l++;
+      |                        ^
+      |             (                )
+1 warning generated.
+Finished building: ../src/Pruebas.c
  
-Building target: Lab4Amir
+Building target: Pruebas
 Invoking: MacOS X C Linker
-gcc  -o "Lab4Amir"  ./src/Lab4Amir.o ./src/funciones.o   
-Finished building target: Lab4Amir
+gcc  -o "Pruebas"  ./src/Pruebas.o   
+Finished building target: Pruebas
  
-13:03:50 **** Incremental Build of configuration Debug for project Lab4Amir ****
+16:31:49 **** Incremental Build of configuration Debug for project Pruebas ****
 make all 
 make: Nothing to be done for `all'.
