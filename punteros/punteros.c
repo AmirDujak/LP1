@@ -17,4 +17,6 @@ int main(void) {
     printf("Antes de intercambiar \nX = %d \nY = %d\n", x, y);
     intercambiar(&x, &y);
     printf("Después de intercambiar \nX = %d \nY = %d\n", x, y);
+
+    return 0;
 }
